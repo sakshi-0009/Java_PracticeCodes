@@ -12,5 +12,9 @@ public class QueueDemo {
 		obj.offer(40);
 		System.out.println(obj);
 
+		obj.poll();
+		System.out.println(obj);
+		System.out.println(obj.peek());
+		
 	}
 }
