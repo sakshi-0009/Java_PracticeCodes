@@ -2,6 +2,7 @@ package Map;
 import java.util.*;
 
 class Platform1{
+	
 	String str = null;
 	int foundYr = 0;
 	
@@ -14,20 +15,16 @@ class Platform1{
 	}
 }
 
-//class SortByName implements Comparator{
-//	public int compare(Object obj1, Object obj2) {
-//		return ((Platform1)obj1).str.compareTo(((Platform1)obj2).str);
-//	}
-//}
-class SortByFoundYr implements Comparator{
+class SortByName implements Comparator{
 	public int compare(Object obj1, Object obj2) {
-		return ((Platform1)obj1).foundYr - ((Platform)obj2).foundYr;
+		return ((Platform1)obj1).str.compareTo(((Platform1)obj2).str);
 	}
 }
+
 class TreeMapDemo2 {
 
 	public static void main(String[] args) {
-		TreeMap tm = new TreeMap(new SortByFoundYr());
+		TreeMap tm = new TreeMap(new SortByName());
 		 tm.put(new Platform1("Youtube",2005), "Google");
 		 tm.put(new Platform1("Insta",2005), "Meta");
 		 tm.put(new Platform1("ChatGPT",2005), "OpenAI");
