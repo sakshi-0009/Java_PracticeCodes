@@ -20,7 +20,6 @@ class MyThread11 extends Thread{
 		}
 	}
 }
-
 public class ThreadPoolDemo11 {
 
 	public static void main(String[] args) {

@@ -3,12 +3,11 @@ package MultiThreading;
 class Demo extends Thread{
 	public void run() {
 		System.out.println(Thread.currentThread().getName());
-		
+//		System.out.println("Thread-1:"+T.getName());
 		Thread T = Thread.currentThread();
 		System.out.println("Thread-1:"+T.getPriority());
 	}
 }
-
 class MyThread2 extends Thread{
 	public void run() {
 		
@@ -19,11 +18,8 @@ class MyThread2 extends Thread{
 		
 		Demo obj = new Demo();
 		obj.start();
-		
-		
 	}
 }
-
 public class ThreadDemo02 {
 
 	public static void main(String[] args) {

@@ -12,7 +12,7 @@ public class ThreadDemo08 {
 	public static void main(String[] args) {
 		MyThread8 obj = new MyThread8();
 		obj.start();
-		obj.yield();
+		Thread.yield();
 		System.out.println(Thread.currentThread().getName());
 	}
 }

@@ -29,7 +29,7 @@ public class ThreadGroupDemo09 {
 		t3.start();
 		t4.start();
 		
-//		cThreadGP.interrupt();
+		cThreadGP.interrupt();
 		
 		System.out.println(pThreadGP.activeCount());
 		System.out.println(pThreadGP.activeGroupCount());

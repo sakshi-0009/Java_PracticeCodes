@@ -12,6 +12,5 @@ public class This01 {
 	public static void main(String[] args) {
 		This01 obj1 = new This01();
 		This01 obj2 = new This01(10 );
-
 	}
 }
