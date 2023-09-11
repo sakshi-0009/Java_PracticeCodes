@@ -27,5 +27,29 @@ public class FileDemo {
 		}
 		System.out.println(count);
 		
+		System.out.println(fobj1.getName());
+		System.out.println(fobj2.getName());
+		
+		System.out.println(fobj1.getParent());
+		System.out.println(fobj2.getName());
+		
+		System.out.println(fobj1.getPath());
+		System.out.println(fobj2.getPath());
+		
+		System.out.println(fobj2.getAbsolutePath());
+		System.out.println(fobj2.getCanonicalPath());
+		
+		System.out.println(fobj2.canExecute());
+		System.out.println(fobj2.canRead());
+		System.out.println(fobj2.canWrite());
+		
+		System.out.println(fobj2.isDirectory());
+		System.out.println(fobj2.isFile());
+		System.out.println(fobj2.isHidden());
+		
+		System.out.println(fobj2.lastModified());
+		System.out.println(fobj2.length());
+		System.out.println(fobj2.compareTo(fobj1));
+
 	}
 }
