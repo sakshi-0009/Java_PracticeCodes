@@ -1,4 +1,4 @@
-package FileHandling;
+package FileHandling.FileHandingDemo;
 
 import java.io.*;
 
@@ -26,9 +26,6 @@ public class FileDemo {
 			}
 		}
 		System.out.println(count);
-
-		System.out.println(fobj1.canExecute());
-		System.out.println(fobj1.canRead());
-		System.out.println(fobj1.canWrite());
+		
 	}
 }
