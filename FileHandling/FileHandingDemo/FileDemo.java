@@ -27,29 +27,29 @@ public class FileDemo {
 		}
 		System.out.println(count);
 		
-		System.out.println(fobj1.getName());
-		System.out.println(fobj2.getName());
+		System.out.println(fobj1.getName()); 		//FileHandingDemo
+		System.out.println(fobj2.getName()); 		//Code.txt
+
+		System.out.println(fobj1.getParent()); 		//null
+		System.out.println(fobj2.getName()); 		//code.txt
 		
-		System.out.println(fobj1.getParent());
-		System.out.println(fobj2.getName());
+		System.out.println(fobj1.getPath()); 		//FilehandlingDemo
+		System.out.println(fobj2.getPath()); 		//Code.txt
 		
-		System.out.println(fobj1.getPath());
-		System.out.println(fobj2.getPath());
+		System.out.println(fobj2.getAbsolutePath()); //C:\Users\User\eclipse-workspace\03_PracticeCodes\Code.txt
+		System.out.println(fobj2.getCanonicalPath()); //C:\Users\User\eclipse-workspace\03_PracticeCodes\Code.txt
 		
-		System.out.println(fobj2.getAbsolutePath());
-		System.out.println(fobj2.getCanonicalPath());
+		System.out.println(fobj2.canExecute());		//true
+		System.out.println(fobj2.canRead());		//true
+		System.out.println(fobj2.canWrite());		//true
 		
-		System.out.println(fobj2.canExecute());
-		System.out.println(fobj2.canRead());
-		System.out.println(fobj2.canWrite());
+		System.out.println(fobj2.isDirectory()); 	//false
+		System.out.println(fobj2.isFile()); 		//true
+		System.out.println(fobj2.isHidden()); 		//false
 		
-		System.out.println(fobj2.isDirectory());
-		System.out.println(fobj2.isFile());
-		System.out.println(fobj2.isHidden());
-		
-		System.out.println(fobj2.lastModified());
-		System.out.println(fobj2.length());
-		System.out.println(fobj2.compareTo(fobj1));
+		System.out.println(fobj2.lastModified()); 	//1694430787287
+		System.out.println(fobj2.length());  		//18
+		System.out.println(fobj2.compareTo(fobj1)); //-3
 
 	}
 }
