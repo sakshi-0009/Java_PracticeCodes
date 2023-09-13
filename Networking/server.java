@@ -11,8 +11,8 @@ public class server {
 		System.out.println("Connection Established!");
 		OutputStream os = s.getOutputStream();
 		PrintStream ps = new PrintStream(os);
-		ps.print("Hello Client");
-		ps.print("Welcome to networking!");
+		ps.println("Hello Client");
+		ps.println("Welcome to networking!");
 		
 		ps.close();
 		os.close();
