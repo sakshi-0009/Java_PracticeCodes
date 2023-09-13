@@ -6,4 +6,5 @@
  *
  */
 module PracticeCodes {
+	requires java.desktop;
 }
